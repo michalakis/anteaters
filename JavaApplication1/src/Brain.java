@@ -229,18 +229,4 @@ public class Brain {
             throw new Exception("Couldn't read file.");
         }
     }
-
-    // State is wthin the range a state could possibly be
-    // (does not take into account actual number of instructions in this brain)
-    // this is important because it's used before that is known
-    private static Boolean validState(int st) {
-        Boolean result = true;
-
-        if (st > 9999 || st < 0) {
-            result = false;
-        }
-
-        return result;
-    }
-
 }
