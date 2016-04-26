@@ -7,12 +7,9 @@ this is just to get around Java's rule about only having 1 per file,
 the other classes are so simple it makes sense to have them here for now.
 I think this means they are package-private which for our purposes should be ok.
 
-note(stan): at the moment, the instructions classes themselves do not check for valid values for their components:
-e.g. the constructor for Mark does not check that the int is between 0 and 5.
-This is instead handled by the ant brain loader code which I think is fine because
-we'll never create an ant brain any other way (the Brain constructor takes a file)
-the reason I chose this is because we need to check check all states exist in the file as a whole
-so it would be inconsistent to do some of the checking there and some of it here.
+todo(stan): check for valid inputs in constructors
+            (states are between 0 and 9999)
+            (markers are between 0 and 5) etc.
 
 */
 

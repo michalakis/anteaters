@@ -109,7 +109,7 @@ Flip 5 361 108
 Flip 4 359 109
 Flip 3 357 110
 Flip 2 353 355
-Sense LeftAhead 0 112 Food
+Sense LeftAhead 0 112 
 Turn Right 0
 Flip 6 363 114
 Flip 5 361 115
