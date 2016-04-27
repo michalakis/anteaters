@@ -207,6 +207,10 @@ public class Brain {
                                 }
                             }
                         }break;
+                        default: // first word is not a valid instruction
+                        {
+                            throw new Exception();
+                        }
                     }
                 } catch (Exception e) {
                     throw new Exception("Syntax error at instruction " + instructionNo + "  (starting from 0)");
