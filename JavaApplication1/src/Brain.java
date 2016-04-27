@@ -10,18 +10,13 @@ public class Brain {
     private ArrayList<Instruction> instructions;
     private int state;
 
-    public Brain(File f) {
+    public Brain(File f) throws Exception {
         instructions = new ArrayList<>();
 
         state = 0;
 
-        try {
-            loadFromFile(f);
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-            System.exit(1);
-        }
-
+        loadFromFile(f);
+        
     }
     
     private void loadFromFile(File f) throws Exception {
